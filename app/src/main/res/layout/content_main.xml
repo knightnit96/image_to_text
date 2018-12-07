@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/textmain1"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/textmain4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the App!"
+            android:layout_below="@+id/textmain1"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textmain2"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="Tap CAMERA to convert text from a new image"
+            android:layout_below="@+id/textmain4"
+            android:textSize="20dp" />
+        <Button
+            android:theme="@style/ColoredButton"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_toRightOf="@+id/textmain2"
+            android:id="@+id/button_camera"
+            android:gravity="center"
+            android:layout_marginTop="130dp"
+            android:drawableLeft="@drawable/ic_action_camera"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Camera"
+            android:textSize="13dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textmain3"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="Tap GALLERY to convert text from an existing image"
+            android:layout_below="@+id/textmain2"
+            android:textSize="20dp" />
+        <Button
+            android:theme="@style/ColoredButton"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_toRightOf="@+id/textmain3"
+            android:id="@+id/button_gallery"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            android:drawableLeft="@drawable/ic_action_libpic"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Gallery"
+            android:textSize="13dp"/>
+
+        <Button
+            android:theme="@style/ColoredButton"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_below="@+id/textmain3"
+            android:id="@+id/show_tips"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/default_padding"
+            android:drawableLeft="@drawable/ic_action_tips_light"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Show tips"/>
+
+        <TextView
+            android:id="@+id/textbottom"
+            android:textSize="15dp"
+            android:layout_marginBottom="@dimen/default_padding"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Nguyễn Hoàng Thuận - Hoàng Văn Việt"/>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
